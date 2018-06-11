@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Market</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Market</h1>
+    </header>
+
+    <content class="container">
+        <section class="leftSidebar">
+            <label>Ad:</label>
+                <input type="text" name="Names" id="productName" value="">
+
+            <label>Çəki:</label>
+                <input type="text" name="Weight" id="weight" value="">
+
+            <label>Kateqoriyalar:</label>
+                <select name="Categories" id="category">
+                        <option value="empty">Seç...</option>
+                        <option value="1">Ət</option>
+                        <option value="2">Şirniyyat</option>
+                        <option value="3">Tərəvəz</option>
+                </select>
+
+            <label>Qiymət:</label>
+                <input type="text" name="Price">
+
+            <label>Son istifadə tarixi:</label>
+                <input type="date" name="endDate">
+
+                <input type="submit" value="Məhsulu əlavə et" onclick="add()" style="font-weight: bold; background-color: springgreen; float: right; margin-right: 25px;">
+        </section>
+        
+        
+        <section class="rightSidebar">
+            <label>Stokdakı mal sayı:</label>
+                <input id="all" type="number" value="0" readonly>
+
+            <h4>Kateqoriyalar üzrə:</h4>
+
+            <label>Ət:</label>
+                <input id="meat" type="number" value="0" readonly>
+
+            <label>Şirniyyat:</label>
+                <input id="sweety" type="number" value="0" readonly>
+
+            <label>Tərəvəz:</label>
+                <input id="greens" type="number" value="0" readonly>
+        </section>
+    </content>
+</body>
+</html>

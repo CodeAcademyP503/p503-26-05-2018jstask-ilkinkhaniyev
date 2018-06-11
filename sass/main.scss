@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+}
+.header{
+    width: 800px;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: springgreen;
+    h1{
+        font-size: 3em;
+        text-align: center;
+    }
+}
+.container{
+    width: 800px;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    .leftSidebar{
+        input{
+            width: 200px;
+            height: 30px;
+            margin: 5px 0px 5px 30px;
+            border: none;
+            border-radius: 5px;
+            outline-style: none;
+            float: left;
+        }
+        label{
+            float: left;
+            width: 120px;
+            height: 20px;
+            margin: 10px 5px;
+            text-align: end;
+        }
+        select{
+            width: 200px;
+            height: 30px;
+            margin: 5px 0px 5px 30px;
+            border: none;
+            border-radius: 5px;
+            outline-style: none;
+            float: left;
+        }
+    }
+    .rightSidebar{
+        input{
+            width: 200px;
+            height: 30px;
+            margin: 5px 0px; 
+            border: none;
+            border-radius: 5px;
+            outline-style: none;
+            float: left;
+        }
+        h4{
+            margin: 20px 0px;
+            text-align: center;
+        }
+        label{
+            float: left;
+            width: 120px;
+            height: 20px;
+            margin: 10px 10px;
+            text-align: end;
+        }
+    }
+}
